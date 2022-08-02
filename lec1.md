@@ -128,3 +128,47 @@ When computers are interconnected
 * Kernal starts GUI or shell. 
 # Review
 > ![logo](./pictures/pic13.png)
+
+# Part 1B
+---
+### Operating system services
+* User Interface 
+* Program execution 
+* I/O operations
+* File-system manipulation
+* Communications 
+* Error Detections 
+* Interfaces
+  * Command Line Interface (CLI)
+  * Graphic User Interface (GUI)
+  * Touchscreen Interfaces 
+  * Batch
+* Resource Allocation
+* Logging -> keep track of activties from users
+* Protection and Security 
+  * Protection -> The access to system resources is controlled
+  * Security -> The system is safe from outsiders 
+## System Calls
+* Not called directly
+> ![logo](./pictures/pic14.png)
+* The user sees none of the call and hence it is called an API
+* If inforamtion needs to be passed through Parameters
+  * Pass the parameters through resgisters (for small information)
+  * Parameters are stored in blocks, and therefore addresses of blocks are passed 
+  * Paramters are pushed onto the stack and popped when needed (Stack).
+* Types
+  * Process Control
+  * File Managment
+  * Device Managment
+  * Information Maintenance
+  * Communications
+  * Protection
+In general a system call is an interface to services provided by an OS
+It is Often called internally by programming libraries system programs.
+## Design and Implmentation
+* User Goals->Should be convintient to use 
+* System Goal-> Efficent, Flexible, Error-Free.
+* Mostly written in C, C++. 
+* The higher level the lanaguage the slower, however it is has more portability.
+>Monolithic Structure (Original UNIX operating system)
+> ![logo](./pictures/pic15.png)
